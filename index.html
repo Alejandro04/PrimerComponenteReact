@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo básico de ReactJS desde cero</title>
+</head>
+
+<body>
+
+    <div id="componentreact"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        var component =
+            <div>
+                <h1>Saludos desde React</h1>
+                <p>Tu primer componente</p>
+            </div>;
+
+        var elemento = document.getElementById('componentreact');
+        ReactDOM.render(component, elemento);
+    </script>
+</body>
+
+</html>
